@@ -55,6 +55,7 @@ public class PlayerMover : MonoBehaviour
         {
             scoreKeeper.Increment();
             Debug.Log("Score increment "+scoreKeeper.Score.ToString());
+            Destroy(other);
         }
     }
 }
